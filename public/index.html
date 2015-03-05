@@ -1,48 +1,114 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>MP2 Starter</title>
-<script src="./lib/angular/angular.min.js"></script>
-<script src="./js/controllers.js"></script>
-<link rel="stylesheet" href="./css/styles.css">
-<link rel="stylesheet" href="./foundation/css/foundation.css">
-<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-</head>
-<body>
-<nav class="top-bar" data-topbar role="navigation">
-<ul class="title-area">
-<li class="name">
-<h1><a href="#">MP2</a></h1>
-</li>
-<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-</ul>
-<section class="top-bar-section">
-<!-- Left Nav Section -->
-<ul class="left">
-<li><a href="https://courses.engr.illinois.edu/cs498rk1/index.html">CS498RK</a></li>
-</ul>
-</section>
-</nav>
-<div class="row" ng-app = "demoApp">
-<div class="panel small-centered columns small-12 medium-4">
-<input id="nameInput" ng-model="name" placeholder="Your Name" autofocus>
-<h3>Hello, {{name}}</h3>
-</div>
-</div>
-<div class="row">
-<div class="alert columns small-12 large-6">
-<div><img src="http://lorempixel.com/400/200/cats" /></div>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit velit temporibus, fugit recusandae aliquid officiis molestias possimus reprehenderit quos. Facere dolores, nulla optio recusandae. Voluptatibus aut esse nulla saepe sit ut amet, neque officia officiis quam ea ex adipisci, quaerat, eligendi veniam iste temporibus. Aperiam ea quos fugiat provident, voluptatum reiciendis mollitia voluptates, odio quam at, deserunt animi voluptas odit aliquid saepe voluptate distinctio excepturi. Deserunt, id esse fuga cum accusantium eos obcaecati odit veritatis molestias illum sequi repellat, quisquam quasi architecto velit blanditiis perferendis, nulla eligendi non laboriosam. Eligendi sint, voluptatem ipsam dolore eum temporibus dicta, quaerat ea molestias placeat, asperiores minima sit explicabo! Repellat qui ducimus ipsum. Dignissimos at, aliquid vitae asperiores omnis provident voluptatibus, itaque delectus. Porro corrupti vel culpa, delectus in doloremque nam ratione aliquid ullam non iusto magnam, repudiandae, magni a quasi voluptatum inventore exercitationem quibusdam sint autem totam ex quia possimus. Similique ad fugiat eligendi magnam ab, ex nulla unde eos, tempora quis consequatur maxime inventore perferendis voluptatem non nam dignissimos voluptatum dolor quasi quidem molestias maiores doloribus. Omnis ipsa fugit amet! Eum repellat deleniti fuga omnis in maiores rem iusto, qui quasi ipsum illum odit laudantium molestiae, nostrum ipsam fugit animi atque! Non.
-</div>
-<div class="columns small-12 large-6">
-<div><img src="http://lorempixel.com/400/200/nature" /> </div>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nobis facere sint placeat necessitatibus reprehenderit amet quas minima beatae illo nemo labore, maxime adipisci, accusamus voluptates repudiandae quia, ut excepturi ea quis obcaecati molestias error architecto unde? Hic vel facere porro magnam ipsam omnis eos ducimus, architecto velit beatae modi natus sunt suscipit quo optio qui repellat, blanditiis consequuntur. Fuga omnis porro quis inventore in voluptatum veritatis illum beatae rem. Labore nam saepe cupiditate quod, itaque quidem libero, quas tempore incidunt, quos earum repudiandae recusandae quia voluptas ducimus inventore, expedita. Alias minima, commodi aut, aspernatur laborum quae mollitia pariatur suscipit ad accusamus a ipsam fuga necessitatibus voluptas esse error reprehenderit provident. Sequi architecto ipsum qui enim labore sunt incidunt ullam pariatur. Minus porro error ipsa perferendis exercitationem debitis dicta asperiores nostrum cum voluptas qui dolores odit numquam incidunt cumque eos nemo architecto repudiandae adipisci, eius ut, aut suscipit minima perspiciatis consectetur. Ratione quisquam neque voluptatem? Qui, aspernatur iste quaerat iure. Debitis nobis minus animi mollitia libero temporibus perferendis ratione, inventore ullam, eos ut porro, velit quibusdam rerum possimus, ex! Quidem consectetur obcaecati ad veritatis. Velit illum aliquid tenetur, nisi illo quaerat labore nemo id sequi eveniet consequuntur. Voluptate, similique, rem!</div>
-</div>
-<script src="./js/script.js"></script>
-<script src="./lib/jquery-2.1.3.min/index.js"></script>
-<script src="./foundation/js/foundation.min.js"></script>
-<script src="http://localhost:35729/livereload.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<title>The Website Of Karthik Bala</title>
+
+		<script src="./lib/angular/angular.min.js"></script>
+		<script src="./js/app.js"></script>
+		<script src="./js/controllers.js"></script>
+
+		<link rel="stylesheet" href="./css/styles.css">
+		<link rel="stylesheet" href="./foundation/css/foundation.css">
+		<link rel="stylesheet" type="text/css" href="./lib/slick-1.4.1/slick/slick.scss">
+
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	</head>
+	<body>
+		<nav class="top-bar" data-topbar role="navigation">
+		<!-- <ul class="title-area">
+			<li class="name">
+				<h1><a href="#">Karthik Bala</a></h1>
+			</li>
+
+			<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+		</ul>
+		<section class="top-bar-section">
+
+			<ul class="left">
+				<li><a href="#Section1">About Me</a></li>
+				<li><a href="#Section2">Official Things</a></li>
+				<li><a href="#Section3">Hobbies</a></li>
+				<li><a href="#Section4">Miscellaneous Links</a></li>
+				<li><a href="#Section5">Wisdom</a></li>
+			</ul>
+		</section> -->
+
+	<div data-magellan-expedition="fixed"> <dl class="sub-nav"> <dd data-magellan-arrival="build"><a href="#Section4">Build with HTML</a></dd> <dd data-magellan-arrival="js"><a href="#Section5">Arrival 2</a></dd> </dl> </div>
+		</nav>
+	<div class="row" ng-app = "demoApp">
+		<div class="panel small-centered columns small-12 medium-4">
+			<input id="nameInput" ng-model="name" placeholder="Your Name" autofocus>
+			<h3>Hello, {{name}}</h3>
+		</div>
+	</div>
+
+	<ul class="example-orbit-content" data-orbit> <li data-orbit-slide="headline-1"> <div> <h2>Headline 1</h2> <h3>Subheadline</h3> </div> </li> <li data-orbit-slide="headline-2"> <div> <h2>Headline 2</h2> <h3>Subheadline</h3> </div> </li> <li data-orbit-slide="headline-3"> <div> <h2>Headline 3</h2> <h3>Subheadline</h3> </div> </li> </ul>
+
+	<div class="row" id = "Section1">
+		<div class="columns small-12 large-6">
+		<div><img src="http://lorempixel.com/400/200/cats" /></div>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit velit temporibus, fugit recusandae aliquid officiis molestias possimus reprehenderit quos. Facere dolores, nulla optio recusandae. Voluptatibus aut esse nulla saepe sit ut amet, neque officia officiis quam ea ex adipisci, quaerat, eligendi veniam iste temporibus. Aperiam ea quos fugiat provident, voluptatum reiciendis mollitia voluptates, odio quam at, deserunt animi voluptas odit aliquid saepe voluptate distinctio excepturi. Deserunt, id esse fuga cum accusantium eos obcaecati odit veritatis molestias illum sequi repellat, quisquam quasi architecto velit blanditiis perferendis, nulla eligendi non laboriosam.
+		</div>
+		<div class="columns small-12 large-6">
+		<div><img src="http://lorempixel.com/400/200/nature" /> </div>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nobis facere sint placeat necessitatibus reprehenderit amet quas minima beatae illo nemo labore, maxime adipisci, accusamus voluptates repudiandae quia, ut excepturi ea quis obcaecati molestias error architecto unde? Hic vel facere porro magnam ipsam omnis eos ducimus, architecto velit beatae modi natus sunt suscipit quo optio qui repellat, blanditiis consequuntur. Fuga omnis porro quis inventore in voluptatum veritatis illum beatae rem. Labore nam saepe cupiditate quod, itaque quidem libero, quas tempore incidunt, quos earum repudiandae recusandae quia voluptas ducimus inventore, expedita. </div>
+	</div>
+
+	<div class = "row" id = "Section2">
+		<div class = "columns small-12 large-6">
+			<div id = "ResumeAndProjects">
+
+
+						<button id="openModal">Resume</button>
+
+					<h1>My Projects</h1>
+					<p>Coming Soon!</p>
+
+		
+					<div id = "parrot_div">
+						<img id = "parrot_image" src="images/parrot.jpg">
+					</div>
+				</div>
+		</div> 
+	</div>
+
+	<div class="row" id = "Section3">
+	</div>
+	<div class="row" id = "Section4">
+	</div>
+	<div class="row" id = "Section5" >
+		<div class="carousel">
+			<div>"I find that a duck's image of me is very much influenced by whether or not I have bread."- Mitch Hedberg
+			</div>
+			<div>
+			“You have power over your mind - not outside events. Realize this, and you will find strength.” -Marcus Aurelius
+			</div>
+			<div>
+			"Nothing in this world can take the place of persistence. Talent will not: nothing is more common than unsuccessful men with talent. Genius will not; unrewarded genius is almost a proverb. Education will not: the world is full of educated derelicts. Persistence and determination alone are omnipotent."-Calvin Coolidge
+			</div>
+			<div>
+			You have to learn the rules of the game. And then you have to play better than anyone else. -Albert Einstein
+			</div>
+						<div>
+			All the world is queer save thee and me, and even thou art a little queer. - Robert Owen
+			</div>
+		<div>
+		There is nothing either good or bad but thinking makes it so.-William Shakespeare
+		</div>
+		<div>
+		Education is an admirable thing, but it is well to remember from time to time that nothing that is worth knowing can be taught.-Oscar Wilde
+		</div>
+	</div>
+
+	</div>
+		<script src="./js/script.js"></script>
+		<script src="./lib/jquery-2.1.3.min/index.js"></script>
+		<script src="./foundation/js/foundation.min.js"></script>
+		<script src="./foundation/js/vendor/jquery.js"></script>
+		<script src="./foundation/js/foundation.js"></script>
+		<script src="./foundation/js/foundation/foundation.orbit.js"></script>
+
+		<script src="http://localhost:35729/livereload.js"></script>
+	</body>
 </html>
