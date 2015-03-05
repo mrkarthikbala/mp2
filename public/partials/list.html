@@ -1,9 +1,29 @@
-<!doctype html>
-<html>
-	<head>
-		<title>List View </title>
-	</head>
-	<body>
-	
-	</body>
-</html>
+<div id ="list">
+		<div>
+			<h1> Search for a movie</h1>
+			<input type = "text" ng-model="query">
+			
+
+			<h4>{{query}}</h4>
+		</div>
+		<div ng-controller="movieListController">	
+
+			<select ng-model = 'selectedAttr'>
+				<option value='title'>Title</option>
+				<option value='rank'>Rank</option>
+			</select>
+			<select ng-model = 'selectedOrder' >
+				<option value='false'>Ascending</option>
+				<option value='true'>Descending</option>
+			</select>
+			<ul>
+				<li ng-repeat= "x in movies | filter :query | orderBy: selectedAttr : selectedOrder">
+
+					<img ng-src = 'data/images/{{x.imdbID}}.jpg'}}/>
+					{{x.title}}<br>
+					{{x.rank}}<br>
+				</li>
+			</ul>
+		</div>
+
+		</div>
