@@ -20,7 +20,7 @@
 				<li ng-repeat= "x in movies | filter :query | orderBy: selectedAttr : selectedOrder">
 
 					<img ng-src = 'data/images/{{x.imdbID}}.jpg'}}/>
-					{{x.title}}<br>
+					<a href = "#/list/{{x.title}}">{{x.title}}</a><br>
 					{{x.rank}}<br>
 				</li>
 			</ul>
