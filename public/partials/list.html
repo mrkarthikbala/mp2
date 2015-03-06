@@ -8,16 +8,16 @@
 		</div>
 		<div ng-controller="movieListController">	
 
-			<select ng-model = 'selectedAttr'>
+			<select ng-model = 'selectedAttr' >
 				<option value='title'>Title</option>
 				<option value='rank'>Rank</option>
 			</select>
-			<select ng-model = 'selectedOrder' >
-				<option value='false'>Ascending</option>
-				<option value='true'>Descending</option>
-			</select>
-			<ul>
-				<li ng-repeat= "x in movies | filter :query | orderBy: selectedAttr : selectedOrder">
+			<form>
+				<input type="radio" name = "orda" ng-model = "theOrder" ng-value="false">Ascending<br>
+				<input type="radio" name = "orda" ng-model = "theOrder" ng-value="true">Descending<br>
+			</form>
+			<ul id = "listOfMovies">
+				<li ng-repeat= "x in movies | filter :query | orderBy: selectedAttr: theOrder">
 
 					<img ng-src = 'data/images/{{x.imdbID}}.jpg'}}/>
 					<a href = "#/list/{{x.title}}">{{x.title}}</a><br>
@@ -27,3 +27,5 @@
 		</div>
 
 		</div>
+
+	
