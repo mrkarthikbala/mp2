@@ -28,12 +28,58 @@
 		</nav>
 
 
-<div>
-<div class="range-slider" data-slider> <span class="range-slider-handle" role="slider" tabindex="0"></span> <span class="range-slider-active-segment"></span> <input type="hidden"> </div>
+<div id = "container">
+	<div id = "resumeModal">
+		<a href = "#" data-reveal-id="resumeReveal"><button>Click to View Resume</button></a>
 
-<a href="#" data-reveal-id="myModal">Click Me For A Modal</a> <div id="myModal" class="reveal-modal" data-reveal> <h2>Awesome. I have it.</h2> <p class="lead">Your couch. It is mine.</p> <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p> <a class="close-reveal-modal">&#215;</a> </div>
+		<div id="resumeReveal" class="reveal-modal large" data-reveal>
+			<embed src="data/resume/KarthikBalaResume.pdf" width="100%" height="100%">
+			 <a class="close-reveal-modal">&#215;</a>
+		</div>
 
+	</div>
+
+	<div id = "carousel">
+		<ul class="quotes" data-orbit>
+			 <li data-orbit-slide="quote-1"> 
+			 	<div> 
+			 	"I find that a duck's image of me is very much influenced by whether or not I have bread."- Mitch Hedberg
+			 	</div>
+			 </li> 
+			 <li data-orbit-slide="quote-2"> 
+			 	<div> 
+			 	“You have power over your mind - not outside events. Realize this, and you will find strength.” -Marcus Aurelius
+			 	</div> 
+			 </li> 
+			 <li data-orbit-slide="quote-3"> 
+			 	<div>
+			 	"Nothing in this world can take the place of persistence. Talent will not: nothing is more common than unsuccessful men with talent. Genius will not; unrewarded genius is almost a proverb. Education will not: the world is full of educated derelicts. Persistence and determination alone are omnipotent."-Calvin Coolidge
+			 	</div> 
+			 </li> 
+			 <li data-orbit-slide="quote-4"> 
+			 	<div> 
+			 	You have to learn the rules of the game. And then you have to play better than anyone else. -Albert Einstein
+			 	</div> 
+			 </li> 
+			 <li data-orbit-slide="quote-5"> 
+			 	<div> 
+			 	All the world is queer save thee and me, and even thou art a little queer. - Robert Owen
+			 	</div> 
+			 </li> 
+			 <li data-orbit-slide="quote-6"> 
+			 	<div> 
+			 	There is nothing either good or bad but thinking makes it so.-William Shakespeare
+			 	</div> 
+			 </li> 
+			 <li data-orbit-slide="quote-7"> 
+			 	<div> 
+			 	Education is an admirable thing, but it is well to remember from time to time that nothing that is worth knowing can be taught.-Oscar Wilde
+			 	</div> 
+			 </li> 
+		</ul>
+	</div>
 </div>
+
 
 <script src="./lib/jquery-2.1.3.min/index.js"></script>
 <script src="./foundation/js/foundation.min.js"></script>

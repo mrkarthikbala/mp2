@@ -173,6 +173,7 @@ $orbit-timer-hide-for-small: true !default;
 
       .orbit-slide-number {
         position: absolute;
+        display: none;
         top: 10px;
         #{$default-float}: 10px;
         font-size: 12px;
@@ -246,7 +247,7 @@ $orbit-timer-hide-for-small: true !default;
         height: 60px;
         line-height: 50px;
         color: white;
-        background-color: $orbit-nav-bg;
+        background-color: black; 
         text-indent: -9999px !important;
         z-index: 10;
 
