@@ -1,5 +1,11 @@
 @import url('http://fonts.googleapis.com/css?family=Bree+Serif|Merriweather');
 @import url('http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css');
+.verticalCenter{
+
+ 	position: relative;
+  	top: 50%;
+ 	transform: translateY(-50%);
+}
 
 h1 {
   font-size: 2.2rem;
@@ -14,8 +20,21 @@ h1 {
 nav {
   position: fixed;
 }
-
-
+#tbbb{
+	clear: both;
+}
+#Section1, #Section2, #Section3, #Section4, #Section5{
+	height: 300px;
+	position: relative;
+	display: block;
+	margin: 0 auto;
+}
+#Section2, #Section4{
+	background-color: #4577D4;
+}
+#Section1{
+	@extend .verticalCenter;
+}
 
 #resumeModal{
 	height: 90%;

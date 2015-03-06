@@ -1,6 +1,50 @@
-GIT PUSH
+Part A:
+	--responsive design
+		1. Text moves into 1 column when small
+		2. something with @media?
+		3. something with the navbar
+
+
+
+	top bar scroll to right spot
 
 
 Part C:
-style
-animationS
+	style
+	animationS
+	code style
+
+Part B:
+	look at mp1 for mixins and stuff
+
+
+TA questions:
+	code style graded?
+
+	walk through push
+
+
+MP1 Requirements:
+   
+
+   Centering: Content in each horizontal stripe/section must be horizontally centered. At least one element on the page must be vertically centered.
+    Background Image: A section which uses a fixed-position background image - Example
+    Video: Embedded video using HTML5 video tag - Example
+    CSS3 Animations: At least one use of CSS3 animations (e.g. fade in/out, transitions)
+    At least one use of scalable vector icons through CSS (e.g. FontAwesome)
+    Inclusion of social media icons
+
+    Finished:
+    
+	
+    Layout: All content must be laid out in a single page with full-width horizontal stripes/sections including a header and a footer - Example
+     Smooth Scrolling: Smooth scrolling when navigating to a different section using the navigation bar Example
+    
+	 Position Indicator: Indicator of the current reading position visible in the navigation bar (see above gif for example)
+    Carousel: A section with a carousel/slider using a minimum of three slides. It should include the navigation arrows on the side - Example
+    Extra Credit: create a original favicon for your page. The best Llama favicon will be used for the class webpage.
+    Modal: A section which uses modal windows with additional content - Example
+    Multi-column layout: A section with Multi-column content - Example
+
+    Sticky Navbar: A top navigation bar that sticks to the top of the window when scrolling Example
+        Navbar Resizing: Navigation bar must be larger when users are at the top of the page. As users start scrolling down, it should resize and become smaller - Example

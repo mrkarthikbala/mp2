@@ -10,7 +10,7 @@
 $include-html-magellan-classes: $include-html-classes !default;
 
 $magellan-bg: $white !default;
-$magellan-padding: 10px !default;
+$magellan-padding: 15px !default;
 
 @include exports("magellan") {
   @if $include-html-magellan-classes {
@@ -22,8 +22,8 @@ $magellan-padding: 10px !default;
       padding: $magellan-padding;
 
       .sub-nav {
-        margin-bottom: 0;
-        dd { margin-bottom: 0; }
+        margin-bottom: 10px;
+        dd { margin-bottom: 10px; }
         a {
           line-height: 1.8em;
         }
