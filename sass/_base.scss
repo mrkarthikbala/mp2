@@ -14,3 +14,13 @@ h1 {
 nav {
   position: fixed;
 }
+
+#genreButtons {
+	display: inline-block;
+	list-style-type: none;
+
+	li{
+		display: inline;
+		width: 75px;
+	}
+}

@@ -30,6 +30,14 @@ movieApp.controller("movieDetailController", ['$scope', '$routeParams', '$http',
 }]);
 
 movieApp.controller("movieGalleryController", ['$scope', '$routeParams', '$http', function($scope, $routeParams, $http){
+	$scope.selGenre = null;
+	$scope.change = function(g){
+		$scope.selGenre = g;
+		if (g === "All") $scope.selGenre = null;
+	}
+	$scope.genres = ["All", "Action", "Adventure", "Crime", "Comedy","Drama",
+			"Musical", "Mystery", "Romance", "Sci-Fi", "Thriller","Western"]
+
 	$http.get('data/imdb250.json').success(function(data){
 		$scope.movies = data;
 	});
