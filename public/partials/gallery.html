@@ -1,13 +1,21 @@
 <div id = "gallery" ng-controller="movieGalleryController">
-	<div>
 		<ul id = "genreButtons">
 			<li ng-repeat = "genre in genres">
 				<button ng-click='change(genre)'>{{genre}}</button>
 			</li>
 		</ul>
-		<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4"> 
+	
+	<div id = "galContainer">
+
+		<ul class="small-block-grid-3 medium-block-grid-6 large-block-grid-12"> 
 			<li ng-repeat = "film in movies | filter: selGenre">
-				<a href = "#/list/{{film.title}}">{{film.title}}</a>
+
+					<div id = "thumbnail">	
+				<a href = "#/list/{{film.title}}">
+					<img ng-src = 'data/images/{{film.imdbID}}.jpg'}}>
+				</a>
+
+					</div>
 			</li>
 		</ul>
 	</div>

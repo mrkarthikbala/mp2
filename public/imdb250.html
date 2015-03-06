@@ -5,15 +5,21 @@
 		
 		<link rel="stylesheet" href="./css/styles.css">
 		<link rel="stylesheet" href="./foundation/css/foundation.css">
+		<link rel = "stylesheet" href = "./lib/animate.css/animate.min.css">
 		<script src="./lib/angular/angular.min.js"></script>
 		<script src="./lib/angular-route/angular-route.min.js"></script>
+		<script src="./lib/angular-animate/angular-animate.js"></script>
+
 		<script src = "./js/app.js"></script>
 
 		<script src="./js/controllers.js"></script>
 	</head>
 	<body>
-	<a href= "#list">Go to list</a>
-	<a href = "#gallery">Go to gallery</a>
+	<h1 id = "title">IMDB Top 250 Movie Gallery</h1>
+	<div id = "imdbLinks">
+		<a href= "#list">Search</a>
+		<a href = "#gallery">Gallery</a>
+	</div>
 	<div ng-view></div>
 	</body>
 </html>

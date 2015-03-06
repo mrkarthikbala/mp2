@@ -1,5 +1,6 @@
 @import url('http://fonts.googleapis.com/css?family=Bree+Serif|Merriweather');
 @import url('http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css');
+
 .verticalCenter{
 
  	position: relative;
@@ -54,19 +55,92 @@ nav {
 
 
 /*IMDB STYLING*/
-#listOfMovies{
-	li {
-		img {
-			height: 50px;
-		}
+#title{
+	text-align: center;
+	color: #4577D4;
+}
+
+#imdbLinks {
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+	a{
+		text-align: center;
+		padding: 20px;
 	}
+	padding: 20px;
+}
+
+#searchDiv {
+	padding: 30px;
+	margin: 0 auto;
+	width: 50%;
+	h2 {
+		color: #4577D4;
+	}
+}
+#info{
+	margin: 0 auto;
+	padding: 30px;
+	width: 600px;
+
+
+}
+#thumbnail{
+	width: 60px;
+	height: 75px;
+	a.hover{
+		opacity: 50%;
+	}
+}
+#top3{
+	width: 300px;
+	height: 150px;
+}
+#top3img{
+	width: 90px;
+	height: 150px;
+	float: left;
+	display: inline-block;
+	padding: 10px;
+
+}
+#top3text{
+	padding: 10px;
+	height: 150px;
+	display: inline-block;
+	width: 175px;
+	float: right;
 }
 #genreButtons {
 	display: inline-block;
 	list-style-type: none;
-
-	li{
+	margin: 0 auto;
+	li {
 		display: inline;
-		width: 75px;
+		button{
+			width: 100px;
+		}
+	}
+
+}
+
+#galContainer{
+	width: 800px;
+	margin: 0 auto;
+}
+
+#listOfMovies{
+	li.ng-enter{
+		-webkit-animation: bounceIn 1s;
+    -moz-animation: bounceIn 1s;
+    -ms-animation: bounceIn 1s;
+    animation: bounceIn 1s;
+	}
+	li.ng-leave{
+		-webkit-animation: bounceOut 1s;
+    -moz-animation: bounceOut 1s;
+    -ms-animation: bounceOut 1s;
+    animation: bounceOut 1s;
 	}
 }

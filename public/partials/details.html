@@ -1,6 +1,24 @@
 <div id = "listItem" ng-controller = "movieDetailController">
-  <h1>{{film.title}}</h1>
-  <button ng-click='incrementAt()'>Next</button>
-  <button ng-click='decrementAt()'>Previous</button>
+	<div id = "info">
 
+	<div id="top3">
+		<div id="top3img">
+			<img ng-src = 'data/images/{{film.imdbID}}.jpg'}}>
+		</div>
+		<div id="top3text">
+  			<p>{{film.title}}</p>
+  			<p>Rank: {{film.rank}}</p>
+  		</div>
+  	</div>
+
+  		<p>{{film.plot}}</p>
+  		<p>Released: {{film.released}}</p>
+  		<p>Runtime: {{film.runtime}}</p>
+  		<p>Awards: {{film.awards}}</p>
+
+  		
+  		<button ng-click='incrementAt()'>Next</button>
+  		<button ng-click='decrementAt()'>Previous</button>
+
+  	</div>
 </div>

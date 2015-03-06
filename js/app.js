@@ -1,5 +1,5 @@
 
-var movieApp = angular.module("movieListApp", ['ngRoute']);
+var movieApp = angular.module("movieListApp", ['ngRoute', 'ngAnimate']);
 
 movieApp.config(function($routeProvider){
 	$routeProvider.
@@ -14,5 +14,8 @@ movieApp.config(function($routeProvider){
 	when('/gallery',{
 		templateUrl : './partials/gallery.html',
 		controller : 'movieGalleryController'
+	}).
+	otherwise({
+		redirectTo: '/list'
 	});
 });

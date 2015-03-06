@@ -1,29 +1,34 @@
 <div id ="list">
-		<div>
-			<h1> Search for a movie</h1>
+		<div id = "searchDiv">
+			<h2> Search for a movie</h2>
 			<input type = "text" ng-model="query">
-			
 
-			<h4>{{query}}</h4>
-		</div>
 		<div ng-controller="movieListController">	
 
-			<select ng-model = 'selectedAttr' >
-				<option value='title'>Title</option>
-				<option value='rank'>Rank</option>
-			</select>
-			<form>
-				<input type="radio" name = "orda" ng-model = "theOrder" ng-value="false">Ascending<br>
-				<input type="radio" name = "orda" ng-model = "theOrder" ng-value="true">Descending<br>
-			</form>
+				<select id = "attrSelect" ng-model = 'selectedAttr' >
+					<option value='title'>Title</option>
+					<option value='rank'>Rank</option>
+				</select>
+				<form id = "orderForm">
+					<input type="radio" name = "orda" ng-model = "theOrder" ng-value="false">Ascending<br>
+					<input type="radio" name = "orda" ng-model = "theOrder" ng-value="true">Descending<br>
+				</form>
+			
 			<ul id = "listOfMovies">
-				<li ng-repeat= "x in movies | filter :query | orderBy: selectedAttr: theOrder">
+				<li ng-repeat= "film in movies | filter :query | orderBy: selectedAttr: theOrder">
 
-					<img ng-src = 'data/images/{{x.imdbID}}.jpg'}}/>
-					<a href = "#/list/{{x.title}}">{{x.title}}</a><br>
-					{{x.rank}}<br>
+					<div id="top3">
+						<div id="top3img">
+							<img ng-src = 'data/images/{{film.imdbID}}.jpg'}}>
+						</div>
+						<div id="top3text">
+	  						<p>{{film.title}}</p>
+	  						<p>Rank: {{film.rank}}</p>
+	  					</div>
+  					</div>
 				</li>
 			</ul>
+		</div>
 		</div>
 
 		</div>
