@@ -1,0 +1,10 @@
+<div id = "gallery" ng-controller="movieGalleryController">
+	<div>
+	
+		<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4"> 
+			<li ng-repeat = "film in movies">
+				<a href = "#/list/{{film.title}}">{{film.title}}</a>
+			</li>
+		</ul>
+	</div>
+</div>

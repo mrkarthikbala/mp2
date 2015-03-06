@@ -10,5 +10,9 @@ movieApp.config(function($routeProvider){
 	when('/list/:title', {
 		templateUrl: 'partials/details.html',
 		controller: 'movieDetailController'
+	}).
+	when('/gallery',{
+		templateUrl : './partials/gallery.html',
+		controller : 'movieGalleryController'
 	});
 });

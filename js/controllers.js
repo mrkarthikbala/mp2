@@ -28,3 +28,9 @@ movieApp.controller("movieDetailController", ['$scope', '$routeParams', '$http',
 	}
 
 }]);
+
+movieApp.controller("movieGalleryController", ['$scope', '$routeParams', '$http', function($scope, $routeParams, $http){
+	$http.get('data/imdb250.json').success(function(data){
+		$scope.movies = data;
+	});
+}]);
