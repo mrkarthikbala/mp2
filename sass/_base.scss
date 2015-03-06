@@ -15,6 +15,13 @@ nav {
   position: fixed;
 }
 
+#listOfMovies{
+	li {
+		img {
+			height: 50px;
+		}
+	}
+}
 #genreButtons {
 	display: inline-block;
 	list-style-type: none;
