@@ -19,3 +19,5 @@ movieApp.config(function($routeProvider){
 		redirectTo: '/list'
 	});
 });
+
+var nameApp = angular.module("nameApp", ['ngAnimate']);
