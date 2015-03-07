@@ -1,11 +1,14 @@
-@import url('http://fonts.googleapis.com/css?family=Bree+Serif|Merriweather');
+@import url('http://fontfos.googleapis.com/css?family=Bree+Serif|Merriweather');
 @import url('http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css');
 
 #container{
 	position: relative;
+	width: 100%;
 	overflow: hidden;
 }
-
+*{
+	font-family: Helvetica, Arial, Sans-Serif;
+}
 h1 {
   font-size: 2.2rem;
   color: lighten($orange, 25);
@@ -29,17 +32,18 @@ nav {
   div{
   	display: inline-block;
   }
-
-  img {
-  	height: 40px;
-  	padding-bottom: 15px;
-  	width: 40px;
-
+  #footer-icons{
+  	float: right;
+  	padding-right: 200px;
+  }
+  i {
+  	padding-left: 20px;
   }
 }
 #bar{
 	position: fixed;
 	display: block;
+	background-color: black;
 }
 .row {min-width:100% !important;}
 #tbbb{
@@ -51,7 +55,7 @@ nav {
 	display: block;
 	margin: 0 auto;
 }
-#Section2, #Section4{
+#Section1, #Section3{
 	background-color: #4577D4;
 }
 #S1C1, #S1C2{
@@ -60,8 +64,50 @@ nav {
 .rowContainer{
 	@extend .verticalCenter;
 }
+.rowContainer20{
+
+		position: relative;
+		top: 10%;
+		transform: translateY(-10%);
+}
+.rowContainerSpecial{
+		position: relative;
+		top: 30%;
+		transform: translateY(-30%);
+
+}
 #Section5{
 	background: url(../data/my_images/forest.jpg);
+
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+#Section3{ 
+	background: url(../data/my_images/mountain.jpg);
+
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+#Section2{
+	background: url(../data/my_images/mountainRed.jpeg);
+
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+#Section4{
+
+	background: url(../data/my_images/mountain4.jpg);
+	h1{
+		color: white;
+	}
+	color: white;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+#Section1{
+	background: url(../data/my_images/mountainCloudy.jpg);
+
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
@@ -72,27 +118,41 @@ nav {
 #resumeReveal{
 	height: 90%;
 }
-#Section4{
-	a{
-		color: white;
-	}
-}
-#silk{
-	width: 200px;
-	height: 200px;
-	border-radius: 10%;
-}
+
 #carousel{
 	margin: 0 auto;
 	width: 50%;
+	height: 300px;
 
+	.orbit-container{
+		height: 300px;
+	}
 	ul{
 		margin: 0 auto;
+	}
+}
+@media (max-width: 1000px){
+
+	#Section1, #Section2, #Section3, #Section4, #Section5{
+		overflow: auto;
+		background: none;
+	}
+	#Section2, #Section4{
+		background-color: #ADD8E6;
+		color: black;
+		h1{
+			color:black;
+		}
 	}
 }
 @media (max-width: 640px){
 	#footerContent{
 		color: white;
+	}
+	#Section1, #Section3{
+
+		top: 0%;
+ 		transform: translateY(0%);
 	}
 	h1{
 		font-size: 20;
@@ -133,6 +193,7 @@ nav {
 	#carousel{
 		display: block;
 	}
+
 }
 /*IMDB STYLING
 	PART C BEGINS HERE

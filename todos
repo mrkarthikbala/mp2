@@ -6,23 +6,19 @@ Part A:
 			images shrink
 		3. 
 			background change on section 5
-			carousel deleted, list of quotes revealed.
-
-
-
-
-
-
-
-
-
+			carousel deleted, list of quotes revealed
 Part B:
-	look at mp1 for mixins and stuff
+	1. color scheme better.
+	2. font- helvetica
+		linkedin icon
+		picture
 
-	reduce size of divs
+	3. changed some foundation components-
+		magellan
+		orbit
+		modal
 
-	helvetica
-	better linkedin icon
+	4. changed css animation
 
 
 TA questions:
@@ -34,13 +30,6 @@ TA questions:
 
 
 MP1 Requirements:
-   
-	
-    Video: Embedded video using HTML5 video tag - Example
-    At least one use of scalable vector icons through CSS (e.g. FontAwesome)
-
-    Finished:
-
 
     background image
 

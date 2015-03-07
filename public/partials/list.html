@@ -18,6 +18,8 @@
 				<li ng-repeat= "film in movies | filter :query | orderBy: selectedAttr: theOrder">
 
 					<div id="top3">
+					<a href = "#/list/{{film.title}}">
+							
 						<div id="top3img">
 							<img ng-src = 'data/images/{{film.imdbID}}.jpg'}}>
 						</div>
@@ -25,6 +27,7 @@
 	  						<p>{{film.title}}</p>
 	  						<p>Rank: {{film.rank}}</p>
 	  					</div>
+	  				</a>
   					</div>
 				</li>
 			</ul>

@@ -28,8 +28,8 @@ $orbit-timer-bg: rgba(255,255,255,0.3) !default;
 $orbit-timer-show-progress-bar: true !default;
 
 // We use these to control the bullet nav styles
-$orbit-bullet-nav-color: $iron !default;
-$orbit-bullet-nav-color-active: $aluminum !default;
+$orbit-bullet-nav-color: $aluminum !default;
+$orbit-bullet-nav-color-active: black !default;
 $orbit-bullet-radius: rem-calc(9) !default;
 
 // We use these to controls the style of slide numbers
@@ -242,7 +242,7 @@ $orbit-timer-hide-for-small: true !default;
       .orbit-next {
         position: absolute;
         top: 45%;
-        margin-top: -25px;
+        margin-top: 45px;
         width: 36px;
         height: 60px;
         line-height: 50px;

@@ -8,7 +8,7 @@ var navShrink = function(){
   $(window).scroll(function(){
       if ( $(document).scrollTop() > 50 ){
       
-        $("bar").css("height", "60px");
+        $("bar").css("height", "40px");
         $("dd").css("font-size", "10px");	
       }
       else {
