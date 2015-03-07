@@ -1,41 +1,52 @@
 Part A:
 	--responsive design
 		1. Text moves into 1 column when small
-		2. something with @media?
-		3. something with the navbar
+		2. footer css animation stops when small
+			headers shrink
+			images shrink
+		3. 
+			background change on section 5
+			carousel deleted, list of quotes revealed.
 
 
 
-	top bar scroll to right spot
 
 
-Part C:
-	style
-	animationS
-	code style
+
+
+
 
 Part B:
 	look at mp1 for mixins and stuff
 
+	reduce size of divs
+
+	helvetica
+	better linkedin icon
+
 
 TA questions:
-	code style graded?
 
 	walk through push
+	code style: controllers
+	code style: nav resize
+	code style: compass in base.scss animation
 
 
 MP1 Requirements:
    
-
-   Centering: Content in each horizontal stripe/section must be horizontally centered. At least one element on the page must be vertically centered.
-    Background Image: A section which uses a fixed-position background image - Example
+	
     Video: Embedded video using HTML5 video tag - Example
-    CSS3 Animations: At least one use of CSS3 animations (e.g. fade in/out, transitions)
     At least one use of scalable vector icons through CSS (e.g. FontAwesome)
-    Inclusion of social media icons
 
     Finished:
-    
+
+
+    background image
+
+    Inclusion of social media icons
+	
+    Layout: All content must be laid out in a single page with full-width horizontal stripes/sections including a header and a footer - Example
 	
     Layout: All content must be laid out in a single page with full-width horizontal stripes/sections including a header and a footer - Example
      Smooth Scrolling: Smooth scrolling when navigating to a different section using the navigation bar Example

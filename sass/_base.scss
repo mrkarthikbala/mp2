@@ -3,7 +3,7 @@
 
 #container{
 	position: relative;
-
+	overflow: hidden;
 }
 
 h1 {
@@ -11,18 +11,23 @@ h1 {
   color: lighten($orange, 25);
 }
 
+.verticalCenter{
+
+	position: relative;
+	top: 50%;
+ 	transform: translateY(-50%);
+}
 .test {
   font-size: 1.2rem;
   color: $blue;
 }
 
 nav {
+
   position: fixed;
 
   div{
   	display: inline-block;
-
-  	padding-left: 50px;
   }
 
   img {
@@ -52,10 +57,8 @@ nav {
 #S1C1, #S1C2{
 	display: inline-block;
 }
-#s1v1{
-	position: relative;
-	top: 50%;
- 	transform: translateY(-50%);
+.rowContainer{
+	@extend .verticalCenter;
 }
 #Section5{
 	background: url(../data/my_images/forest.jpg);
@@ -63,6 +66,7 @@ nav {
 	background-repeat: no-repeat;
 }
 #resumeModal{
+	padding-top: 50px;
 	height: 90%;
 }
 #resumeReveal{
@@ -86,25 +90,54 @@ nav {
 		margin: 0 auto;
 	}
 }
-
-
-#footer-name{
-
-	h2.ng-enter{
-		-webkit-animation: slideInUp 1s;
-    -moz-animation: slideInUp 1s;
-    -ms-animation: slideInUp 1s;
-    animation: slideInUp 1s;
+@media (max-width: 640px){
+	#footerContent{
+		color: white;
 	}
-	h2.ng-leave{
-		-webkit-animation: fadeOut 1s;
-    -moz-animation: fadeOut 1s;
-    -ms-animation: fadeOut 1s;
-    animation: fadeOut 1s;
+	h1{
+		font-size: 20;
+	}
+	#silk{
+		height:100px;
+		width: 100px;
+	}
+	#carousel{
+		display: none;
+	}
+	#quotesWithoutCarousel{
+		display: block;
+		li{
+			color: white;
+		}
+	}
+	#Section5{
+		background: none;
+		
+		background-color:  black;
 	}
 }
 
-/*IMDB STYLING*/
+@media (min-width: 650px){
+	#footerContent{
+		position: absolute;
+		animation: scroll 10s linear 4s infinite;
+		 overflow: hidden;
+	}
+	@keyframes scroll {
+		0% { left: 0%; }
+		100% { left: 100%; }
+	}
+	#quotesWithoutCarousel{
+		display: none;
+	}
+	#carousel{
+		display: block;
+	}
+}
+/*IMDB STYLING
+	PART C BEGINS HERE
+
+*/
 #title{
 	text-align: center;
 	color: #4577D4;
