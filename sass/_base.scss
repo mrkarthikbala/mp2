@@ -45,7 +45,8 @@ nav {
 	display: block;
 	background-color: black;
 }
-.row {min-width:100% !important;}
+.row {min-width:100% !important;
+			}
 #tbbb{
 	clear: both;
 }
@@ -62,6 +63,7 @@ nav {
 	display: inline-block;
 }
 .rowContainer{
+	height: 100%;
 	@extend .verticalCenter;
 }
 .rowContainer20{
@@ -131,8 +133,17 @@ nav {
 		margin: 0 auto;
 	}
 }
+@media (min-width: 1000px){
+	#Section1{
+		padding-top: 100px;
+	}
+}
 @media (max-width: 1000px){
 
+	#container{
+		padding-top: 200px;
+
+	}
 	#Section1, #Section2, #Section3, #Section4, #Section5{
 		overflow: auto;
 		background: none;
