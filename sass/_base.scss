@@ -86,13 +86,18 @@ nav {
 }
 #Section3{ 
 	background: url(../data/my_images/mountain.jpg);
-
+	.rowContainer{
+		padding-top: 50px;
+	}
+	h1{
+		text-align: center;
+	}
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
 #Section2{
-	background: url(../data/my_images/mountainRed.jpeg);
 
+	background: url(../data/my_images/mountainCloudy.jpg);
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
@@ -108,10 +113,14 @@ nav {
 }
 
 #Section1{
-	background: url(../data/my_images/mountainCloudy.jpg);
+
+	background: url(../data/my_images/mountainRed.jpeg);
 
 	background-size: 100%;
 	background-repeat: no-repeat;
+	h1, h6{
+		color: white;
+	}
 }
 #resumeModal{
 	padding-top: 50px;
@@ -147,6 +156,13 @@ nav {
 	#Section1, #Section2, #Section3, #Section4, #Section5{
 		overflow: auto;
 		background: none;
+	}
+	#Section1{
+		h1, h6{
+			color: black;
+		}
+		padding-top: 0px;
+		
 	}
 	#Section2, #Section4{
 		background-color: #ADD8E6;
