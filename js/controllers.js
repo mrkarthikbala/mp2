@@ -1,6 +1,6 @@
 movieApp.controller("movieListController", ['$scope', '$http', function($scope, $http){
 	
-	$http.get('data/imdb250.json').success(function(data){
+	$http.get('./data/imdb250.json').success(function(data){
 		$scope.movies = data;
 	});
 	
@@ -10,7 +10,7 @@ movieApp.controller("movieListController", ['$scope', '$http', function($scope, 
 
 movieApp.controller("movieDetailController", ['$scope', '$routeParams', '$http', function($scope, $routeParams, $http){
 
-	$http.get('data/imdb250.json').success(function(data){
+	$http.get('./data/imdb250.json').success(function(data){
 		$scope.movies = data;
 		for (var i = 0; i < data.length; i++){
 
@@ -42,7 +42,7 @@ movieApp.controller("movieGalleryController", ['$scope', '$routeParams', '$http'
 	$scope.genres = ["All", "Action", "Adventure", "Crime", "Comedy","Drama",
 			"Musical", "Mystery", "Romance", "Sci-Fi", "Thriller","Western"]
 
-	$http.get('data/imdb250.json').success(function(data){
+	$http.get('./data/imdb250.json').success(function(data){
 		$scope.movies = data;
 	});
 }]);

@@ -8,7 +8,7 @@ movieApp.config(function($routeProvider){
 		controller : 'movieListController'
 	}).
 	when('/list/:title', {
-		templateUrl: 'partials/details.html',
+		templateUrl: './partials/details.html',
 		controller: 'movieDetailController'
 	}).
 	when('/gallery',{
